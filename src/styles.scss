@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.connect-container {
+  display: flex;
+  flex-direction: row;
+  .connect-dot {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    border: 1px solid black;
+    margin: 0.25em;
+  }
+}
+.primary {
+  background: red;
+}
+.secondary {
+  background: blue;
+}
