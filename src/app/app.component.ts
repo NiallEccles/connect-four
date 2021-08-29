@@ -43,6 +43,7 @@ export class AppComponent {
         //check for connect four
         this.checkHorizontal(currentCol);
         this.checkVertical(row);
+        this.checkDiagonal(col, row);
         // change player
         this.currentPlayer === 0
           ? (this.currentPlayer = 1)
@@ -52,6 +53,33 @@ export class AppComponent {
     };
     // starts recursion
     nextSlot();
+  }
+
+  checkDiagonal(col: number, row: number){
+    // let currentCol = col;
+    // let currentRow = row;
+    // let diagonalSlots: any[] = [];
+    // const nextSlot = () => {
+    //   if(this.state[currentCol + 1] &&
+    //     this.state[currentCol + 1][currentRow][0] !== null){
+    //       currentCol = currentCol + 1;
+    //       currentRow = currentRow + 1;
+    //       diagonalSlots.push([currentCol, currentRow]);
+    //       console.log(diagonalSlots);
+    //       nextSlot();
+    //   } else if(this.state[currentCol - 1] &&
+    //     this.state[currentCol - 1][currentRow][0] !== null) {
+    //       currentCol = currentCol - 1;
+    //       currentRow = currentRow - 1;
+    //       diagonalSlots.push([currentCol, currentRow]);
+    //       console.log(diagonalSlots);
+    //       nextSlot();
+    //   } else {
+    //     return;
+    //   }
+    // }
+    // nextSlot();
+    return;
   }
 
   checkHorizontal(col: number) {
